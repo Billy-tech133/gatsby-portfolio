@@ -8,9 +8,10 @@ import Layout from "../components/layout"
 import Seo from "../components/Seo"
 const IndexPage = () => {
   return (
-    <>
-      <Layout></Layout>
-    </>
+    <Layout>
+      <Hero />
+      <Services />
+    </Layout>
   )
 }
 
