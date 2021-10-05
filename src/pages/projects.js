@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Projects from "../components/Projects"
+import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 const ProjectsPage = ({
   data: {
@@ -9,15 +10,16 @@ const ProjectsPage = ({
 }) => {
   console.log(projects)
   return (
-    <>
+    <Layout>
       {/* <Seo title="projects"> */}
+
       <main>
         <section className="projects-page">
           <Projects title="all projects" projects={projects} />
         </section>
       </main>
       {/* </Seo> */}
-    </>
+    </Layout>
   )
 }
 export const query = graphql`

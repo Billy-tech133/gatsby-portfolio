@@ -30,5 +30,20 @@ module.exports = {
         // Possibility to login with a strapi user, when content types are not publically available (optional).
       },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Oswald`,
+            subsets: [`latin`],
+          },
+          {
+            family: `Roboto`,
+            variants: [`400`, `700`],
+          },
+        ],
+      },
+    },
   ],
 }
