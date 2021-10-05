@@ -21,7 +21,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             )
           })}
         </ul>
-        <ul className={isOpen ? "sidebar-icons" : null}>
+        <ul className={isOpen ? "social-links sidebar-icons" : null}>
           {socialLinks.map(link => {
             return (
               <li key={link.id}>
